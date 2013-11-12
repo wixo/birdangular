@@ -3,11 +3,11 @@
 ( function () {
 	var wxBirdangular = angular.module( 'wxBirdangularModule', [ ] );
 
-	wxBirdangular.constant('keys', { key    : 'FClXseqho1G55sZxJyMkvg'
-	                            , secret : 'm2xbysXdKq5BCbUGUrUQ4ykGB9feMMBRpyH2YAvLM'
-	                            } );
+	wxBirdangular.constant('keys', { key    : 'UR_KEY'
+	                               , secret : 'UR_SECRET'
+	                               } );
 
-	wxBirdangular.value( 'cbUrl', "http://localhost:9000/#/auth" );
+	wxBirdangular.value( 'cbUrl', "UR_CALLBACK_URL" );
 
 	wxBirdangular.service( 'wxBirdangularService',
 	[ 'cbUrl', '$q', '$window', '$rootScope', 'keys',
